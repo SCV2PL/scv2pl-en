@@ -96,23 +96,20 @@ function myFunction() {
 <button onclick="topFunction()" id="myBtn" title="Idź do góry">⏫</button>
 <script src="https://scv2pl.github.io/myBtn.js"></script>
 	
-<script>
-function switchVis(chartId) {
-  document.querySelector('iframe').src = 'https://datawrapper.dwcdn.net/' + chartId;
-}
-</script>
-	
+
 <a id="PNS">
 <hr class="hr1">
 <hr class="hr2">
-<span class="english">
-TEST - Change In Time
-</span>
 
 <select onchange="switchVis(this.value)">
   <option value="Il57Q">Today</option>
         <option value="nK681">1 Day Back</option>
 </select>
+<script>
+function switchVis(chartId) {
+  document.querySelector('iframe').src = 'https://datawrapper.dwcdn.net/' + chartId;
+}
+</script>
 
 <iframe title="Zoning - SARS-CoV-2 Poland." aria-label="Map" id="datawrapper-chart-Il57Q" src="https://datawrapper.dwcdn.net/Il57Q/127/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="673"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
